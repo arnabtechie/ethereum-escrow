@@ -1,0 +1,111 @@
+.account-modal {
+  max-width: 600px;
+}
+
+.account-list {
+  max-height: 400px;
+  overflow-y: auto;
+  margin: 1rem 0;
+}
+
+.account-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  margin-bottom: 0.75rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: #f9fafb;
+}
+
+.account-item:hover {
+  border-color: #667eea;
+  background: #f3f4f6;
+  transform: translateX(4px);
+}
+
+.account-item.active-account {
+  border-color: #10b981;
+  background: rgba(16, 185, 129, 0.1);
+}
+
+.account-item.active-account:hover {
+  border-color: #059669;
+}
+
+.account-info {
+  flex: 1;
+}
+
+.account-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.account-address {
+  font-family: 'Courier New', monospace;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.active-badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #10b981;
+  background: rgba(16, 185, 129, 0.2);
+  padding: 0.25rem 0.5rem;
+  border-radius: 12px;
+}
+
+.account-full {
+  font-family: 'Courier New', monospace;
+  font-size: 0.75rem;
+  color: #6b7280;
+  word-break: break-all;
+  margin-bottom: 0.5rem;
+}
+
+.account-balance {
+  font-size: 0.9rem;
+  color: #10b981;
+  font-weight: 600;
+}
+
+.account-select-icon {
+  font-size: 1.5rem;
+  color: #667eea;
+  font-weight: bold;
+}
+
+.empty-accounts {
+  text-align: center;
+  padding: 3rem;
+  color: #6b7280;
+}
+
+.loading-state {
+  text-align: center;
+  padding: 3rem;
+  color: #6b7280;
+}
+
+.account-selection-hint {
+  padding: 1rem;
+  background: rgba(102, 126, 234, 0.1);
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+.account-selection-hint p {
+  margin: 0;
+  color: #667eea;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
