@@ -6,14 +6,13 @@
 
 **THIS IS A PROOF OF CONCEPT (POC) PROJECT AND SHOULD NOT BE USED IN PRODUCTION.**
 
-This project is intended for:
-- ✅ **Educational purposes** - Learning Web3 development
-- ✅ **Starter template** - Base for building your own escrow system
+This project is intended in:
+- ✅ **Learning purposes** - Hands on Web3 and dApp development
 - ✅ **Testing and experimentation** - Development and testing environments only
 
 **DO NOT USE THIS IN PRODUCTION** without:
 - Comprehensive security audit
-- Professional code review
+- Professional coding structure and review
 - Extensive testing on testnets
 - Proper error handling and monitoring
 - Production-grade infrastructure
@@ -41,10 +40,10 @@ This is a proof-of-concept Ethereum decentralized application for escrow managem
 ## Tech Stack
 
 - **Frontend**: React 19 + Vite
-- **Backend**: Express.js
+- **Backend**: Node.js + Express.js
 - **Web3**: ethers.js v6
 - **Blockchain**: Ethereum Sepolia (chainId: 11155111)
-- **Smart Contracts**: Solidity ^0.8.20
+- **Smart Contracts**: Solidity ^0.8.20+
 
 ## Project Structure
 
@@ -107,7 +106,7 @@ npm run server
 npm run dev
 ```
 
-5. Open [http://localhost:5173](http://localhost:5173) in your browser
+5. Open [http://localhost:5173](http://localhost:5173) in your browser in 2 separate user window
 
 ## Usage Flow
 
@@ -199,24 +198,6 @@ The smart contract (`blockchain_core/contracts/EscrowContract.sol`) implements:
 See `FLOW.md` for detailed flow documentation.
 
 ## Security Considerations (POC Limitations)
-
-**Current Implementation:**
-- ✅ Network enforcement (Sepolia only)
-- ✅ Basic input validation
-- ✅ Basic error handling
-- ✅ Reentrancy protection in smart contract
-- ✅ State transition validation
-
-**Missing for Production:**
-- ❌ Comprehensive security audit
-- ❌ Formal verification
-- ❌ Advanced access control
-- ❌ Rate limiting
-- ❌ Comprehensive monitoring
-- ❌ Multi-signature support
-- ❌ Advanced dispute resolution mechanisms
-- ❌ Production-grade error handling
-- ❌ Comprehensive testing suite
 
 **⚠️ Security Warnings:**
 - Never commit private keys
